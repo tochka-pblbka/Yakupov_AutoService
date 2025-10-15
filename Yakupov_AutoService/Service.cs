@@ -24,7 +24,7 @@ namespace Yakupov_AutoService
         public int ID { get; set; }
         public string Title { get; set; }
         public string MainImagePath { get; set; }
-        public string Duration { get; set; }
+        public int Duration { get; set; }
         public decimal Cost { get; set; }
         public double Discount { get; set; }
         public int DiscountInt
@@ -37,7 +37,6 @@ namespace Yakupov_AutoService
             {
                 Discount = value / 100.0;
             }
-
         }
         public string Description { get; set; }
     

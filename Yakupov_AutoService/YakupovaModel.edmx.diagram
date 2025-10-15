@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="216c73c19f9c4ca09e6442ff715e6d32" Name="Diagram1" ZoomLevel="86">
+      <Diagram DiagramId="7b7e039a98ca4423a6ae7a41d4da2210" Name="Diagram1">
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
@@ -15,6 +15,7 @@
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.Service" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.ServicePhoto" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ЯкуповаАвтосервисModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
         <AssociationConnector Association="ЯкуповаАвтосервисModel.FK_Client_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="ЯкуповаАвтосервисModel.FK_ClientService_Client" ManuallyRouted="false" />

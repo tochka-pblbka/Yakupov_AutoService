@@ -40,11 +40,22 @@ namespace Yakupov_AutoService
                 errors.AppendLine("Укажите стоймость услуги");
             if (_currentService.DiscountInt < 0 && _currentService.DiscountInt >= 100)
                 errors.AppendLine("Укажите скидку для услуги");
-            if (_currentService.Duration < 0)
-                errors.AppendLine("Укажите длительность услуги");
+            if (_currentService.Duration > 240 || _currentService.Duration < 0 || _currentService.Duration == 0)
+                errors.AppendLine("Укажите правильную длительность услуги");
+            
             if (errors.Length > 0)
             {
                 MessageBox.Show(errors.ToString());
+                return;
+            }
+            var allServices = ЯкуповаАвтосервисEntities.GetContext().Service.ToList();
+            allServices=allServices.Where(p=>p.Title == _currentService.Title).ToList();
+
+            var context = ЯкуповаАвтосервисEntities.GetContext();
+            bool duplicateExists = context.Service.Any(p => p.Title == _currentService.Title && p.ID != _currentService.ID);
+            if(duplicateExists)
+            {
+                MessageBox.Show("Такая услуга уже существует");
                 return;
             }
             if(_currentService.ID == 0)
